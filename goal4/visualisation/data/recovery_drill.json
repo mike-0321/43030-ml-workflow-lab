@@ -1,0 +1,47 @@
+{
+  "scope": "Actual local Uvicorn HTTP drill on a temporary artifact copy",
+  "model_version": "digits-logreg-local-v1",
+  "source_run_id": "1cfe6269b9ad4da0be83b4567d7be9ee",
+  "stages": [
+    {
+      "stage": "healthy",
+      "health_status": 200,
+      "readiness_status": 200,
+      "prediction_status": 200,
+      "artifact_sha256": "a809a68eebbc876ee19029a0d86d4b2aaf4b0977c5a951b1bec4e9da216d7d1a",
+      "prediction_body": {
+        "prediction": 8,
+        "confidence": 0.5391934598262569,
+        "model_version": "digits-logreg-local-v1",
+        "model_sha256": "a809a68eebbc876ee19029a0d86d4b2aaf4b0977c5a951b1bec4e9da216d7d1a",
+        "mlflow_run_id": "1cfe6269b9ad4da0be83b4567d7be9ee"
+      }
+    },
+    {
+      "stage": "corrupted_copy",
+      "health_status": 200,
+      "readiness_status": 503,
+      "prediction_status": 503,
+      "artifact_sha256": "a3381cc9ab8c8d7a527d59cda7b3ac76d422505c83a01ee430cbfdd526c580c2",
+      "prediction_body": {
+        "detail": "Model artifact integrity check failed"
+      }
+    },
+    {
+      "stage": "trusted_copy_restored",
+      "health_status": 200,
+      "readiness_status": 200,
+      "prediction_status": 200,
+      "artifact_sha256": "a809a68eebbc876ee19029a0d86d4b2aaf4b0977c5a951b1bec4e9da216d7d1a",
+      "prediction_body": {
+        "prediction": 8,
+        "confidence": 0.5391934598262569,
+        "model_version": "digits-logreg-local-v1",
+        "model_sha256": "a809a68eebbc876ee19029a0d86d4b2aaf4b0977c5a951b1bec4e9da216d7d1a",
+        "mlflow_run_id": "1cfe6269b9ad4da0be83b4567d7be9ee"
+      }
+    }
+  ],
+  "passed": true,
+  "limitations": "Known trusted backup restored; no cloud, concurrency, signing, attacker simulation or recovery-time SLA validated"
+}

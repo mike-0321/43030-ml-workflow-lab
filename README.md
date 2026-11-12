@@ -17,6 +17,8 @@ A small, runnable Python project for practising Git workflow, software quality a
 
 These components support Goals 2, 3 and 4 of the learning portfolio. They share one model service.
 
+For the Goal 4 implementation, commands and recorded model results, see the [Goal 4 MLOps guide](goal4/README.md).
+
 ![Recorded Goal 3 quality results](docs/goal3_quality.png)
 
 The chart redraws historical quality records. `VALIDATION.json` records the separate fresh-source verification of this upload package.

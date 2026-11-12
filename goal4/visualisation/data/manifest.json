@@ -1,0 +1,67 @@
+{
+  "model_version": "digits-logreg-local-v1",
+  "scope": "Agent-assisted supplementary local exercise",
+  "model_file": "digits_pipeline.joblib",
+  "model_sha256": "a809a68eebbc876ee19029a0d86d4b2aaf4b0977c5a951b1bec4e9da216d7d1a",
+  "dataset_source": {
+    "original_creators": "E. Alpaydin and C. Kaynak (1998)",
+    "doi": "https://doi.org/10.24432/C50P49",
+    "license": "CC BY 4.0, as stated by UCI",
+    "subset": "scikit-learn copy of original UCI test subset",
+    "evaluation_boundary": "New stratified split within that subset; not original UCI protocol or writer-independent evaluation"
+  },
+  "dataset_sha256": "f6d9e39f37dc45d327f6db33428ee58970ccceabb2535a5c179de35886b70443",
+  "split_indices_sha256": "ab8e3dcce58d9074c10a8de964f3c7017f9922420c672cbd126fee1522fa607e",
+  "split_seed": 42,
+  "preprocessing": "StandardScaler fitted on training subset only",
+  "input_contract": {
+    "features": 64,
+    "image_shape": [
+      8,
+      8
+    ],
+    "min": 0,
+    "max": 16,
+    "finite_numeric_only": true
+  },
+  "source_sha256": {
+    "learning_service/__init__.py": "7fc455f153363568d285e5249934266e3b706292f3c950beb40d089c9e79ee8a",
+    "learning_service/api.py": "ef33dbe3cffcc283a32e89cff1add7b92411f06ed2277ecd630c9515f94b261d",
+    "learning_service/common.py": "2b1d2dc8494fe71001d3b412bffbdfa87960a2250b0fef70627cbdafab17f07c",
+    "learning_service/observations.py": "df232af6a69bcae2d6123ee082f92fc6b130f94ca951bbbbc6090240fbffbf7d",
+    "learning_service/recovery.py": "74cefba90287fc2bcf58602ff82899210aed4b955eda860846d59485c0e0d82a",
+    "learning_service/train.py": "efe30c2264864a03dfcdb04cfd280eb9434527b33e7d273153a4b186a222a133",
+    "tests/test_api.py": "b9cbabf73e2c31b9c9d31bd78830a091cbcb4e8d5f45cf1dc6e32f146b5a510e",
+    "scripts/quality.py": "463d8483442d8ff92dff4d0f8348284c5e205875b097af3d6bd88b321b49db38",
+    "pyproject.toml": "4db18d971cc224a09e81738c7d4e784d2e5281a91ec6d8f7ce50c92bc46b6c48",
+    ".github/workflows/tests.yml": "51ef35d928a38668d115f2c6c2a6e4d648154a3fc0a37a17ca9194dee66afd85"
+  },
+  "source_git_commit": "4a6c3c20c3f4b586c0a78108d2e6020eac52e7b3",
+  "source_worktree_clean": true,
+  "requirements_lock_sha256": "c822d104e99054607447624266b217643da704c540066e554d8cb877d1493218",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-14.7.6-arm64-arm-64bit",
+    "packages": {
+      "fastapi": "0.162.3",
+      "starlette": "1.10.0",
+      "pydantic": "2.14.3",
+      "httpx": "0.28.1",
+      "pytest": "9.2.0",
+      "numpy": "2.5.4",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1",
+      "joblib": "1.6.0",
+      "mlflow-skinny": "3.18.0",
+      "uvicorn": "0.54.0",
+      "sqlalchemy": "2.1.8",
+      "alembic": "1.20.1",
+      "pip-audit": "2.10.1",
+      "pip": "26.3",
+      "ruff": "0.17.4",
+      "mypy": "2.4.1"
+    }
+  },
+  "mlflow_run_id": "1cfe6269b9ad4da0be83b4567d7be9ee",
+  "tracking_backend": "Local SQLite store; not remote MLflow registry or cloud"
+}

@@ -1,0 +1,25 @@
+{
+  "source": "scikit-learn load_digits; retained held-out indices and trusted local pipeline",
+  "rows": 450,
+  "features": 64,
+  "shape": [
+    8,
+    8
+  ],
+  "pixel_range": [
+    0,
+    16
+  ],
+  "mlflow_run_id": "1cfe6269b9ad4da0be83b4567d7be9ee",
+  "source_git_commit": "4a6c3c20c3f4b586c0a78108d2e6020eac52e7b3",
+  "model_sha256": "a809a68eebbc876ee19029a0d86d4b2aaf4b0977c5a951b1bec4e9da216d7d1a",
+  "csv_sha256": "8fd733312f3a72352b5286bd719499c4ba0834b999f737a35fc158ccb1d88d67",
+  "correct_predictions": 440,
+  "dataset_source": {
+    "original_creators": "E. Alpaydin and C. Kaynak (1998)",
+    "doi": "https://doi.org/10.24432/C50P49",
+    "license": "CC BY 4.0, as stated by UCI",
+    "subset": "scikit-learn copy of original UCI test subset",
+    "evaluation_boundary": "New stratified split within that subset; not original UCI protocol or writer-independent evaluation"
+  }
+}

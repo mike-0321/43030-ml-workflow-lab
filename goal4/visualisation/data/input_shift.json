@@ -1,0 +1,15 @@
+{
+  "reference": "Training subset feature means and standard deviations",
+  "score": "Mean absolute standardised difference in feature means; zero-variance features excluded",
+  "threshold": 0.35,
+  "threshold_status": "Uncalibrated teaching heuristic",
+  "batch_samples": 450,
+  "held_out_score": 0.03387595521053275,
+  "held_out_flag": false,
+  "controlled_shift": "Add 6 intensity units to each held-out pixel, clip to [0,16]",
+  "shifted_score": 16.266459791518407,
+  "shifted_flag": true,
+  "original_accuracy": 0.9777777777777777,
+  "shifted_accuracy": 0.1622222222222222,
+  "limitations": "Constructed perturbation with labels retained; not proof of real-world or concept drift detection"
+}

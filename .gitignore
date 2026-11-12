@@ -12,4 +12,6 @@ runs/
 
 visualisation/outputs/
 visualisation/reproduction_manifest.json
+goal4/visualisation/outputs/
+goal4/visualisation/reproduction_manifest.json
 *.egg-info/
