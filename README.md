@@ -70,7 +70,7 @@ GitHub Actions and Docker configuration are included. A configuration alone is n
 
 ## Sources and preparation
 
-This learning implementation was prepared with Codex assistance. The original development records remain separate from new runs of this published source.
+The original development records remain separate from new runs of this published source.
 
 - Alpaydin, E., & Kaynak, C. (1998). *Optical recognition of handwritten digits* [Data set]. UCI Machine Learning Repository. https://doi.org/10.24432/C50P49
 - scikit-learn: https://scikit-learn.org/stable/common_pitfalls.html

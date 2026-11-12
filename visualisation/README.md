@@ -34,12 +34,11 @@ Four required inputs are `LIVE_RUN_SUMMARY.json`,
 `quality_final.json`. The final Ruff/mypy logs and `pytest.xml` are included
 for the script's optional consistency checks. All seven are in `data/`.
 
-Only personal absolute-path metadata in the copied `LIVE_RUN_SUMMARY.json`
+Personal absolute-path metadata in the copied `LIVE_RUN_SUMMARY.json`
 was redacted to `<original-run>`. Recorded metrics, completion status, run and
 model identifiers, command arguments and results are otherwise unchanged.
 The original evidence was not modified. These records document the original
 execution; the historical interpreter metadata is not executed by this kit.
 
 The mypy scope is API/common only. Passing configured checks and tests does
-not establish the absence of all defects. This visualisation was prepared
-with Codex assistance; it is a reproducible display of recorded evidence.
+not establish the absence of all defects. This visualisation is a reproducible display of recorded evidence.

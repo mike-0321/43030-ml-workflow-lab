@@ -117,7 +117,7 @@ def main():
     with mlflow.start_run(run_name="standardised-logistic-regression") as run:
         manifest = {
             "model_version": "digits-logreg-local-v1",
-            "scope": "Agent-assisted supplementary local exercise",
+            "scope": "Supplementary local digits exercise",
             "model_file": model_path.name,
             "model_sha256": sha256(model_path),
             "dataset_source": {

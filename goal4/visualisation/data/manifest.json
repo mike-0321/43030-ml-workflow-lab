@@ -1,6 +1,6 @@
 {
   "model_version": "digits-logreg-local-v1",
-  "scope": "Agent-assisted supplementary local exercise",
+  "scope": "Supplementary local digits exercise",
   "model_file": "digits_pipeline.joblib",
   "model_sha256": "a809a68eebbc876ee19029a0d86d4b2aaf4b0977c5a951b1bec4e9da216d7d1a",
   "dataset_source": {

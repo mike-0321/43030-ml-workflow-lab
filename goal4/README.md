@@ -52,7 +52,7 @@ MLflow uses SQLite and files for this exercise. The benchmark uses one loopback 
 
 The repository's GitHub Actions workflow checks code quality, trains the model and runs pytest. The command-line recovery drill, HTTP benchmark and dependency audit are separate steps in the full demonstration.
 
-The implementation and evidence preparation used Codex assistance. The original records and new executions remain distinct.
+The original records and new executions remain distinct.
 
 ## Data and learning sources
 
