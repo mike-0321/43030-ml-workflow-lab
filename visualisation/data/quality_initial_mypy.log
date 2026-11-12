@@ -1,0 +1,46 @@
+learning_service/common.py:15: error: Function is missing a type annotation for
+one or more parameters  [no-untyped-def]
+    def write_json(path: Path, data) -> None:
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+learning_service/api.py:32: error: Function is missing a type annotation 
+[no-untyped-def]
+        def __init__(self, app, max_bytes=MAX_BODY_BYTES):
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+learning_service/api.py:35: error: Function is missing a type annotation 
+[no-untyped-def]
+        async def __call__(self, scope, receive, send):
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+learning_service/api.py:52: error: Function is missing a return type annotation
+ [no-untyped-def]
+            async def replay():
+            ^~~~~~~~~~~~~~~~~~~
+learning_service/api.py:63: error: Function is missing a return type annotation
+ [no-untyped-def]
+        def __init__(self):
+        ^~~~~~~~~~~~~~~~~~~
+learning_service/api.py:63: note: Use "-> None" if function does not return a value
+learning_service/api.py:72: error: Function is missing a type annotation 
+[no-untyped-def]
+        def predict(self, pixels):
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+learning_service/api.py:84: error: Function is missing a type annotation 
+[no-untyped-def]
+    def create_app(api_key=None):
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+learning_service/api.py:93: error: Function is missing a return type annotation
+ [no-untyped-def]
+        def authenticate(supplied: Annotated[str | None, Depends(header)])...
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+learning_service/api.py:98: error: Function is missing a return type annotation
+ [no-untyped-def]
+        async def invalid_request(request: Request, exc: RequestValidation...
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~...
+learning_service/api.py:106: error: Function is missing a return type
+annotation  [no-untyped-def]
+        def health():
+        ^~~~~~~~~~~~~
+learning_service/api.py:113: error: Function is missing a return type
+annotation  [no-untyped-def]
+        def predict(request: PredictionRequest):
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Found 11 errors in 2 files (checked 2 source files)

@@ -1,0 +1,41 @@
+[
+  {
+    "check": "ruff_check",
+    "command": [
+      "python",
+      "-m",
+      "ruff",
+      "check",
+      "learning_service",
+      "tests",
+      "scripts"
+    ],
+    "exit_code": 0,
+    "log": "evidence/quality_final_ruff_check.log"
+  },
+  {
+    "check": "ruff_format",
+    "command": [
+      "python",
+      "-m",
+      "ruff",
+      "format",
+      "--check",
+      "learning_service",
+      "tests",
+      "scripts"
+    ],
+    "exit_code": 0,
+    "log": "evidence/quality_final_ruff_format.log"
+  },
+  {
+    "check": "mypy",
+    "command": [
+      "python",
+      "-m",
+      "mypy"
+    ],
+    "exit_code": 0,
+    "log": "evidence/quality_final_mypy.log"
+  }
+]

@@ -1,0 +1,154 @@
+I001 [*] Import block is un-sorted or un-formatted
+  --> learning_service/api.py:6:1
+   |
+ 4 |   production gateway, rate limiter or complete authorisation system.
+ 5 |   """
+ 6 | / from hmac import compare_digest
+ 7 | | import json
+ 8 | | import os
+ 9 | | from typing import Annotated
+10 | |
+11 | | import joblib
+12 | | import numpy as np
+13 | | from fastapi import Depends, FastAPI, HTTPException, Request
+14 | | from fastapi.exceptions import RequestValidationError
+15 | | from fastapi.responses import JSONResponse
+16 | | from fastapi.security import APIKeyHeader
+17 | | from pydantic import BaseModel, ConfigDict, Field
+18 | |
+19 | | from learning_service.common import ARTIFACTS, sha256
+   | |_____________________________________________________^
+20 |
+21 |   MAX_BODY_BYTES = 4096
+   |
+help: Organize imports
+  |
+5 | """
+  - from hmac import compare_digest
+6 | import json
+7 | import os
+8 + from hmac import compare_digest
+9 | from typing import Annotated
+  |
+
+I001 [*] Import block is un-sorted or un-formatted
+ --> learning_service/common.py:2:1
+  |
+1 |   """Paths and provenance helpers; no credentials are stored in these files."""
+2 | / from pathlib import Path
+3 | | import hashlib
+4 | | import json
+  | |___________^
+5 |
+6 |   ROOT = Path(__file__).resolve().parents[1]
+  |
+help: Organize imports
+  |
+1 | """Paths and provenance helpers; no credentials are stored in these files."""
+  - from pathlib import Path
+2 | import hashlib
+3 | import json
+4 + from pathlib import Path
+5 |
+  |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> learning_service/observations.py:2:1
+   |
+ 1 |   """Generate real local response timing, shift and schema-comparison records."""
+ 2 | / import json
+ 3 | | import os
+ 4 | | import secrets
+ 5 | | import socket
+ 6 | | import subprocess
+ 7 | | import sys
+ 8 | | import time
+ 9 | |
+10 | | import httpx
+11 | | import numpy as np
+12 | | from pydantic import BaseModel, ValidationError
+13 | | from sklearn.datasets import load_digits
+14 | | from sklearn.metrics import accuracy_score
+15 | |
+16 | | from learning_service.api import Engine, PredictionRequest
+17 | | from learning_service.common import ROOT, ARTIFACTS, EVIDENCE, write_json
+   | |_________________________________________________________________________^
+help: Organize imports
+   |
+16 | from learning_service.api import Engine, PredictionRequest
+   - from learning_service.common import ROOT, ARTIFACTS, EVIDENCE, write_json
+17 + from learning_service.common import ARTIFACTS, EVIDENCE, ROOT, write_json
+18 |
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> learning_service/train.py:6:1
+   |
+ 4 |   MLflow Tracking documentation. This is an original small teaching implementation.
+ 5 |   """
+ 6 | / import hashlib
+ 7 | | import importlib.metadata
+ 8 | | import platform
+ 9 | | from pathlib import Path
+10 | |
+11 | | import joblib
+12 | | import mlflow
+13 | | import numpy as np
+14 | | from sklearn.datasets import load_digits
+15 | | from sklearn.linear_model import LogisticRegression
+16 | | from sklearn.metrics import accuracy_score, confusion_matrix, f1_score
+17 | | from sklearn.model_selection import train_test_split
+18 | | from sklearn.pipeline import Pipeline
+19 | | from sklearn.preprocessing import StandardScaler
+20 | |
+21 | | from learning_service.common import ROOT, ARTIFACTS, EVIDENCE, sha256, write_json
+   | |_________________________________________________________________________________^
+help: Organize imports
+   |
+20 |
+   - from learning_service.common import ROOT, ARTIFACTS, EVIDENCE, sha256, write_json
+21 + from learning_service.common import ARTIFACTS, EVIDENCE, ROOT, sha256, write_json
+22 |
+   |
+
+F401 [*] `pathlib.Path` imported but unused
+  --> learning_service/train.py:9:21
+   |
+ 7 | import importlib.metadata
+ 8 | import platform
+ 9 | from pathlib import Path
+   |                     ^^^^
+10 |
+11 | import joblib
+   |
+help: Remove unused import: `pathlib.Path`
+  |
+8 | import platform
+  - from pathlib import Path
+9 |
+  |
+
+I001 [*] Import block is un-sorted or un-formatted
+ --> scripts/quality.py:2:1
+  |
+1 |   """Run local quality checks; this is not a hosted CI execution."""
+2 | / import json
+3 | | from pathlib import Path
+4 | | import subprocess
+5 | | import sys
+  | |__________^
+6 |
+7 |   ROOT = Path(__file__).resolve().parents[1]
+  |
+help: Organize imports
+  |
+2 | import json
+  - from pathlib import Path
+3 | import subprocess
+4 | import sys
+5 + from pathlib import Path
+6 |
+  |
+
+Found 6 errors.
+[*] 6 fixable with `--fix`.

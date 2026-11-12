@@ -1,0 +1,11 @@
+fastapi
+httpx
+pytest
+scikit-learn
+mlflow-skinny
+uvicorn
+sqlalchemy
+alembic
+pip-audit
+ruff
+mypy

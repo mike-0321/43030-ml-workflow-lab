@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Full demo: train, test, API and recovery",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_demo.py",
+      "python": "${workspaceFolder}/.venv/bin/python",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Interactive local API",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/serve_demo.py",
+      "python": "${workspaceFolder}/.venv/bin/python",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}
